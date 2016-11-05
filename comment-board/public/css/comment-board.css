@@ -1,0 +1,52 @@
+/* header */
+@media screen and (max-width: 767px) {
+	#board-header h1 small {
+		display: block;
+	}
+}
+
+/* comment form */
+@media screen and (max-width: 600px) {
+	.comment-form .btn {
+		width: 100%;
+	}
+}
+
+/* comments */
+.comment .comment-date {
+	font-size: 12px;
+	opacity: 0.5;
+}
+
+@media screen and (max-width: 767px) {
+	.comment .comment-author,
+	.comment .comment-date {
+		float: none !important;
+	}
+
+	.comment .comment-date {
+		margin-top: 5px;
+	}
+}
+
+/* footer */
+#board-footer {
+	border-top: 1px solid #eee;
+}
+
+#board-footer .creator,
+#board-footer .creator a {
+	color: #999;
+}
+
+#board-footer .creator a {
+	text-decoration: underline;
+}
+
+#board-footer .creator a:hover {
+	text-decoration: none;
+}
+
+#board-footer .thanks {
+	color: #ccc;
+}
