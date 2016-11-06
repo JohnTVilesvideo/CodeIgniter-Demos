@@ -15,6 +15,8 @@ class CommentBoard_Controller extends CI_Controller {
 				$this->getStylesheet('comment-board')
 			),
 			'scripts' => array(
+				'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js',
+				'http://momentjs.com/downloads/moment.js',
 				$this->getScript('comment-board')
 			)
 		);

@@ -8,7 +8,13 @@
 				echo validation_errors('<div class="alert alert-danger">', '</div>');
 		?>
 
+			<div class="form-alerts"></div>
+
 			<?php echo form_open('/', array('class' => 'form-horizontal')); ?>
+				<div class="form-loader">
+					<span class="glyphicon glyphicon-refresh glyphicon-spin"></span>
+				</div>
+
 				<div class="form-group">
 					<label for="name" class="col-sm-2 control-label">Name</label>
 					<div class="col-sm-10">
