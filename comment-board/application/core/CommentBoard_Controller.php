@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class CommentBoard_Controller extends CI_Controller {
 	protected $resources = array();
+	protected $viewData = array();
 
 	public function __construct() {
 		parent::__construct();
@@ -19,9 +20,9 @@ class CommentBoard_Controller extends CI_Controller {
 		);
 	}
 
-	protected function render($template, $data = array()) {
+	protected function render($template) {
 		$this->load->view('global/header', $this->resources);
-		$this->load->view($template, $data);
+		$this->load->view($template, $this->viewData);
 		$this->load->view('global/footer', $this->resources);
 	}
 

@@ -8,8 +8,7 @@ class CommentBoard extends CommentBoard_Controller {
 	}
 
 	public function index() {
-		$data['comments'] = $this->Comment->get();
-		$data['comment_submitted'] = false;
+		$this->viewData['comment_submitted'] = false;
 
 		$this->form_validation->set_rules('name', 'Name', 'required');
 		$this->form_validation->set_rules('comment', 'Comment', 'required');
@@ -19,6 +18,7 @@ class CommentBoard extends CommentBoard_Controller {
 			$this->Comment->create();
 		}
 
-		$this->render('board/index', $data);
+		$this->viewData['comments'] = $this->Comment->get();
+		$this->render('board/index');
 	}
 }
