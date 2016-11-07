@@ -1,0 +1,66 @@
+/* header */
+#status-header {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+	#status-header h1 small {
+		display: block;
+	}
+}
+
+/* status blocks */
+.status-block .status-icon {
+	color: #fff;
+	font-size: 42px;
+}
+
+/* footer */
+#status-footer {
+	padding-top: 20px;
+}
+
+#status-footer .creator,
+#status-footer .creator a {
+	color: #999;
+}
+
+#status-footer .creator a {
+	text-decoration: underline;
+}
+
+#status-footer .creator a:hover {
+	text-decoration: none;
+}
+
+#status-footer .thanks {
+	color: #ccc;
+}
+
+/* animations */
+.glyphicon-spin {
+    -webkit-animation: spin 1000ms infinite linear;
+    animation: spin 1000ms infinite linear;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
